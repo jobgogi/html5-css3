@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function download() {
+      var bar = document.getElementById('bar'),
+          progress = document.getElementById('progress'),
+          loaded = 0,
+          dummyLoad;
+
+      var load = function () {
+        loaded += 5;
+        bar.value = loaded;
+
+        if (loaded === 100) {
+          clearInterval(dummyLoad);
+        }
+      }
+
+      dummyLoad = setInterval(load, 500);
+    }
+  </script>
+</head>
+<body>
+  <input type="button" value="다운로드 시작" onClick="download()">
+  <progress id="bar" value="0" max="100">
+    <span id="progress"></span>
+  </progress>
+</body>
+</html>
