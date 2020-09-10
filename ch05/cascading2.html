@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*
+      스타일 적용 범위가 좁을수록 즉 적당히 여러 요소에 적용할 규칙이 아니라
+      정확히 필요한 요소에만 적용할 스타일일수록 우선순위가 높아진다.
+      1. 인라인 스타일
+      ->
+      2. id 스타일
+      ->
+      3. 클래스 스타일
+      ->
+      4. 태그 스타일
+    */
+    h1 {
+      color: blue;
+    }
+    #habor {
+      border: 1px solid gray;
+      padding: 10px;
+      color: green;
+    }
+    .heading {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="heading" id="habor">세계 3대 미항</h1>
+  <img src="images/rio.png" alt="브라질 리우데자네이루">
+  <p>시드니(Sydney). 호주</p>
+  <p>리우데자네이루(Rio de Janerio). 브라질</p>
+  <p>나폴리(Naples). 이탈리아</p>
+</body>
+</html>
