@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      width: 200px; /* 고정 너비 */
+      height: 100px;
+      background: #FF6A00;
+    }
+    .box2 {
+      width: 50%; /* 가변 너비 - 브라우저 창 너비의 50% */
+      height: 100px;
+      background: #0094FF;
+    }
+    div {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    모던 브라우저 박스 모델 전체 너비 = width 값 + 좌우 패딩 + 좌우 테두리
+    IE6의 박스 모델의 width 값 = 콘텐츠 너비 + 좌우 패딩 + 좌우 테두리
+  -->
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
