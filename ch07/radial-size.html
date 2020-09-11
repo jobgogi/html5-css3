@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 400px;
+      height: 300px;
+    }
+    #div1 {
+      background: darkgreen;
+      background: -webkit-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+      background: -moz-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+      background: -o-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+      background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+    }
+    #div2 {
+      background: darkgreen;
+      background: -webkit-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+      background: -moz-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+      background: -o-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+      background: radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+    }
+    #div3 {
+      background: darkgreen;
+      background: -webkit-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+      background: -moz-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+      background: -o-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+      background: radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+    }
+    #div4 {
+      background: darkgreen;
+      background: -webkit-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+      background: -moz-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+      background: -o-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+      background: radial-gradient(circle farthest-corner at 30% 40%, white, yellow, green);
+    }
+  </style>
+</head>
+<body>
+  <h2>closest-side : 가장 가까운 모서리</h2>
+  <div id="div1"></div>
+  <h2>closest-corner : 가장 가까운 코너</h2>
+  <div id="div2"></div>
+  <h2>farthest-side : 가장 먼 모서리</h2>
+  <div id="div3"></div>
+  <h2>farthest-corner : 가장 먼 코너</h2>
+  <div id="div4"></div>
+</body>
+</html>
