@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 브라우저에서 미지원 코덱이 있을 경우에 사용할 수 있도록
+  다른 코덱의 소스를 추가해준다. -->
+  <video controls>
+    <source src="media/Painting.mp4" type="video/mp4">
+    <source src="media/Painting.webm" type="video/webm">
+    <source src="media/Painting.ogv" type="video/ogg">
+    <!-- 이전 브라우저에서 video 태그를 사용할 수 없을 경우 해결 방안 1 -->
+    이 영상을 보기 위해서는 HTML5를 지원하는 브라우저가 필요합니다.
+  </video>
+</body>
+</html>
