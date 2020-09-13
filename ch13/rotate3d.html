@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .origin {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      float: left;
+      margin: 40px;
+      /* 입체적인 느낌을 주기 위해 화면에 깊이감을 준다 */
+      -webkit-perspective: 200px;
+      -moz-perspective: 200px;
+      -ms-perspective: 200px;
+      -o-perspective: 200px;
+      perspective: 200px;
+    }
+
+    .rotatex {
+      -webkit-transform: rotateX(45deg);
+      -moz-transform: rotateX(45deg);
+      -o-transform: rotateX(45deg);
+      -ms-transform: rotateX(45deg);
+      transform: rotateX(45deg);
+    }
+
+    .rotatey {
+      -webkit-transform: rotateY(45deg);
+      -moz-transform: rotateY(45deg);
+      -o-transform: rotateY(45deg);
+      -ms-transform: rotateY(45deg);
+      transform: rotateY(45deg);
+    }
+
+    .rotatez {
+      -webkit-transform: rotateZ(45deg);
+      -moz-transform: rotateZ(45deg);
+      -o-transform: rotateZ(45deg);
+      -ms-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+
+    .rotatexyz {
+      -webkit-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+      -moz-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+      -o-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+      -ms-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+      transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="origin">
+    <div class="rotatex">
+      <img src="images/fruit.jpg">
+    </div>
+  </div>
+  <div class="origin">
+    <div class="rotatey">
+      <img src="images/fruit.jpg">
+    </div>
+  </div>
+  <div class="origin">
+    <div class="rotatez">
+      <img src="images/fruit.jpg">
+    </div>
+  </div>
+  <div class="origin">
+    <div class="rotatexyz">
+      <img src="images/fruit.jpg">
+    </div>
+  </div>
+</body>
+</html>
