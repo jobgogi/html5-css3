@@ -8,30 +8,37 @@
     ul {
       list-style: none;
     }
+
     li {
-      width: 100px;
       display: inline;
       margin: 10px;
     }
+
     li a {
       padding: 5px 20px;
       font-size: 14px;
       color: blue;
       text-decoration: none;
     }
-    /* [속성] 선택자 - 지정한 속성에 스타일 적용하기 */
-    a[href] {
-      background: yellow;
+
+    .flat {
+      background: blue;
+      color: white;
+    }
+
+    /* [속성 ~= 값] - 여러 값 중 특정 값이 포함된 속성에 스타일 적용 */
+    [class~="button"] {
+      border: 2px solid black;
+      box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
     }
   </style>
 </head>
 <body>
   <ul>
-    <li><a>메인메뉴 :</a></li>
     <li><a href="#">메뉴 1</a></li>
     <li><a href="#">메뉴 2</a></li>
-    <li><a href="#">메뉴 3</a></li>
-    <li><a href="#">메뉴 4</a></li>
+    <li><a href="#" class="button">메뉴 3</a></li>
+    <li><a href="#" class="flat button">메뉴 4</a></li>
   </ul>
 </body>
 </html>
