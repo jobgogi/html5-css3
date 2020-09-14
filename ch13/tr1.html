@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    [class*='tr'] {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border: 1px solid black;
+      
+    }
+    /* 가로, 세로 길이의 변화 */
+    .tr1 {
+      -webkit-transition-property: width, height;
+      -moz-transition-property: width, height;
+      -o-transition-property: width, height;
+      transition-property: width, height;
+      -webkit-transition-duration: 2s, 1s;
+      -moz-transition-duration: 2s, 1s;
+      -o-transition-duration: 2s, 1s;
+      transition-duration: 2s, 1s;
+    }
+    .tr1:hover {
+      width: 200px;
+      height: 120px;
+    }
+    /* 색상의 변화 */
+    .tr2 {
+      -webkit-transition-property: background-color;
+      -moz-transition-property: background-color;
+      -o-transition-property: background-color;
+      transition-property: background-color;
+      -webkit-transition-duration: 2s;
+      -moz-transition-duration: 2s;
+      -o-transition-duration: 2s;
+      transition-duration: 2s;
+    }
+    .tr2:hover {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="tr1"></div>
+  <div class="tr2"></div>
+</body>
+</html>
