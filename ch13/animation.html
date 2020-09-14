@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 60px;
+      height: 60px;
+      margin: 60px;
+      -webkit-animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+      -moz-animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+      -o-animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+      animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+    }
+
+    @-webkit-keyframes rotate {
+      from {
+        transform: perspective(120px) rotateX(0deg) rotate(0deg);
+      }
+      50% {
+        transform: perspective(120px) rotateX(-180deg) rotate(0deg);
+      }
+      to {
+        transform: perspective(120px) rotateX(-180deg) rotate(-180deg);
+      }
+    }
+    @-moz-keyframes rotate {
+      from {
+        transform: perspective(120px) rotateX(0deg) rotate(0deg);
+      }
+      50% {
+        transform: perspective(120px) rotateX(-180deg) rotate(0deg);
+      }
+      to {
+        transform: perspective(120px) rotateX(-180deg) rotate(-180deg);
+      }
+    }
+    @-o-keyframes rotate {
+      from {
+        transform: perspective(120px) rotateX(0deg) rotate(0deg);
+      }
+      50% {
+        transform: perspective(120px) rotateX(-180deg) rotate(0deg);
+      }
+      to {
+        transform: perspective(120px) rotateX(-180deg) rotate(-180deg);
+      }
+    }
+    @keyframes rotate {
+      from {
+        transform: perspective(120px) rotateX(0deg) rotate(0deg);
+      }
+      50% {
+        transform: perspective(120px) rotateX(-180deg) rotate(0deg);
+      }
+      to {
+        transform: perspective(120px) rotateX(-180deg) rotate(-180deg);
+      }
+    }
+
+    @-webkit-keyframes background {
+      from {
+        background: red;
+      }
+      50% {
+        background: green;
+      }
+      to {
+        background: blue;
+      }
+    }
+    @-moz-keyframes background {
+      from {
+        background: red;
+      }
+      50% {
+        background: green;
+      }
+      to {
+        background: blue;
+      }
+    }
+    @-o-keyframes background {
+      from {
+        background: red;
+      }
+      50% {
+        background: green;
+      }
+      to {
+        background: blue;
+      }
+    }
+    @keyframes background {
+      from {
+        background: red;
+      }
+      50% {
+        background: green;
+      }
+      to {
+        background: blue;
+      }
+    }
+
+    .ani {
+      width: 50px;
+      height: 100px;
+      border: 1px solid darkgreen;
+      background: #B6FF00;
+      animation: ani 3s infinite ease-in;
+    }
+    @keyframes ani {
+      from {
+        width: 50px;
+      }
+      to {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="ani"></div>
+</body>
+</html>
